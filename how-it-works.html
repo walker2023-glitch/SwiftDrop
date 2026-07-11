@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>How It Works | SwiftDrop</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        surface: "#f8fafb", primary: "#00696e", "primary-container": "#00c2cb",
+        "on-surface": "#191c1d", "on-surface-variant": "#3c494a", "outline-variant": "#bbc9ca",
+        "surface-container-low": "#f2f4f5", "primary-fixed": "#6bf6ff",
+        "secondary-container": "#feb246", "secondary": "#845400", "tertiary": "#586062",
+      },
+      spacing: { base: "8px", xs: "4px", sm: "12px", md: "24px", lg: "48px", xl: "80px", "margin-desktop": "64px", "margin-mobile": "16px" }
+    }
+  }
+}
+</script>
+<style>
+  body { font-family: 'Inter', sans-serif; background-color: #f8fafb; color: #191c1d; overflow-x: hidden; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+  .step-number { -webkit-text-stroke: 1px #00696e; color: transparent; }
+  @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0px); } }
+  .animate-float { animation: float 4s ease-in-out infinite; }
+</style>
+</head>
+<body class="bg-surface font-body-md overflow-x-hidden">
+
+<!-- Top Navigation Bar -->
+<header class="bg-surface/80 backdrop-blur-md shadow-sm fixed top-0 w-full z-50">
+  <nav class="flex justify-between items-center w-full px-margin-desktop py-base max-w-[1280px] mx-auto">
+    <div class="flex items-center gap-2">
+      <a href="index.html" class="text-xl font-bold text-primary">SwiftDrop</a>
+    </div>
+    <div class="hidden md:flex items-center gap-lg">
+      <a class="text-sm text-primary font-bold border-b-2 border-primary pb-1" href="how-it-works.html">How It Works</a>
+      <a class="text-sm text-on-surface-variant hover:text-primary transition-colors" href="locations.html">Locations</a>
+      <a class="text-sm text-on-surface-variant hover:text-primary transition-colors" href="support.html">Support</a>
+    </div>
+    <a href="menu.html" class="bg-primary text-white px-6 py-2 rounded-lg text-sm scale-95 active:scale-90 transition-all hover:bg-primary-container">
+      Order Now
+    </a>
+  </nav>
+</header>
+
+<main class="pt-24">
+  <!-- Hero Section -->
+  <section class="relative px-margin-mobile md:px-margin-desktop py-xl overflow-hidden">
+    <div class="max-w-[1280px] mx-auto relative z-10 grid md:grid-cols-2 gap-md items-center">
+      <div class="space-y-md">
+        <div class="inline-flex items-center gap-2 bg-primary-fixed text-primary px-3 py-1 rounded-full text-xs font-bold">
+          <span class="material-symbols-outlined text-[16px]">bolt</span>
+          <span>FASTEST CAMPUS DELIVERY</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-on-surface leading-tight">
+          Revolutionizing Campus Delivery, <span class="text-primary">One Drone at a Time.</span>
+        </h1>
+        <p class="text-lg text-on-surface-variant max-w-lg">
+          Skip the wait and the delivery fees. SwiftDrop uses autonomous aerospace technology to bring your favorite local food directly to secure campus hubs in minutes.
+        </p>
+        <div class="flex flex-wrap gap-sm pt-base">
+          <a href="signup.html" class="bg-primary text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-shadow">Get Started</a>
+        </div>
+      </div>
+      <div class="relative hidden md:block">
+        <div class="animate-float relative z-20 rounded-2xl overflow-hidden shadow-2xl">
+          <img class="w-full h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaNnbwATM6aclPt1nsOZZemUUBMwBP095kDAtTBLtqeO5iWrXbPlnwkJ13hU_ItD-7qEg4YdGEb-RyIne3IjBPtwIPO1N766j3HkR8BLB4PID7N_JqlUqmDH0SlwrGFdw3dpm_38dadS_KJJIT32fguc6PC-vwrAnXtbOHP3isqK4UndgalE41-0ySLnTXX7HeMH508UYpGfQb4ml3ypEsOFO8NZ961ONQcsi1QgMH9w8UBZH-qR7Wuw" alt="Delivery drone" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The 3-Step Process -->
+  <section class="bg-surface-container-low py-xl px-margin-mobile md:px-margin-desktop">
+    <div class="max-w-[1280px] mx-auto space-y-xl">
+      <div class="text-center space-y-base">
+        <h2 class="text-3xl md:text-4xl font-bold text-on-surface">3 Simple Steps</h2>
+        <p class="text-lg text-on-surface-variant">How we bridge the gap between your cravings and your campus.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+        <!-- Step 1 -->
+        <div class="bg-white p-lg rounded-2xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-all flex flex-col justify-between group">
+          <div class="space-y-md">
+            <span class="step-number text-6xl font-bold leading-none">01</span>
+            <div class="w-16 h-16 bg-primary-container/20 rounded-xl flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-[32px]">smartphone</span>
+            </div>
+            <h3 class="text-2xl font-bold text-on-surface">Order Through the App</h3>
+            <p class="text-base text-on-surface-variant">Browse our curated list of local restaurants and vendors. Place your order with a single tap using our optimized mobile interface.</p>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="bg-white p-lg rounded-2xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-all flex flex-col justify-between group">
+          <div class="space-y-md">
+            <span class="step-number text-6xl font-bold leading-none">02</span>
+            <div class="w-16 h-16 bg-secondary-container/20 rounded-xl flex items-center justify-center text-secondary">
+              <span class="material-symbols-outlined text-[32px]">flight_takeoff</span>
+            </div>
+            <h3 class="text-2xl font-bold text-on-surface">Drone Dispatch</h3>
+            <p class="text-base text-on-surface-variant">Our central hub automatically assigns a drone. It secures your order in a temperature-controlled compartment and launches instantly.</p>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="bg-white p-lg rounded-2xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-all flex flex-col justify-between group">
+          <div class="space-y-md">
+            <span class="step-number text-6xl font-bold leading-none">03</span>
+            <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-[32px]">qr_code_scanner</span>
+            </div>
+            <h3 class="text-2xl font-bold text-on-surface">Secure Pickup</h3>
+            <p class="text-base text-on-surface-variant">Track your drone in real-time. Once it lands at your local campus station, scan your unique QR code to unlock the secure compartment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-xl px-margin-mobile md:px-margin-desktop text-center">
+    <div class="max-w-2xl mx-auto space-y-md">
+      <h2 class="text-3xl font-bold text-on-surface">Ready to fly?</h2>
+      <p class="text-lg text-on-surface-variant">Join thousands of students and faculty members who have reclaimed their time with SwiftDrop.</p>
+      <div class="flex justify-center pt-base">
+        <a href="menu.html" class="bg-primary text-white px-10 py-4 rounded-full font-semibold hover:bg-primary-container transition-all transform hover:scale-105 active:scale-95 shadow-xl">
+          Order Now
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-surface-container-low border-t border-outline-variant mt-xl">
+  <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-lg max-w-[1280px] mx-auto text-sm">
+    <div class="flex flex-col items-center md:items-start gap-2 mb-md md:mb-0">
+      <span class="text-xl font-bold text-primary">SwiftDrop</span>
+      <p class="text-on-surface-variant opacity-80">© 2024 SwiftDrop. All rights reserved.</p>
+    </div>
+    <div class="flex gap-lg text-on-surface-variant">
+      <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+      <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+      <a class="hover:text-primary transition-colors" href="support.html">Contact Us</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
