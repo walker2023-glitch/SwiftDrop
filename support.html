@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Support | SwiftDrop</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        surface: "#f8fafb", primary: "#00696e", "primary-container": "#00c2cb",
+        "on-surface": "#191c1d", "on-surface-variant": "#3c494a", "outline-variant": "#bbc9ca",
+        "surface-container-low": "#f2f4f5", "primary-fixed": "#6bf6ff",
+        "secondary-container": "#feb246", "secondary": "#845400", "tertiary": "#586062",
+      },
+      spacing: { base: "8px", xs: "4px", sm: "12px", md: "24px", lg: "48px", xl: "80px", "margin-desktop": "64px", "margin-mobile": "16px" }
+    }
+  }
+}
+</script>
+<style>
+  body { font-family: 'Inter', sans-serif; background-color: #f8fafb; color: #191c1d; overflow-x: hidden; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .hero-pattern { background-image: radial-gradient(#00696e 0.5px, transparent 0.5px); background-size: 24px 24px; }
+  .custom-shadow { box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05); }
+</style>
+</head>
+<body class="bg-surface">
+
+<header class="bg-surface/80 backdrop-blur-md shadow-sm w-full top-0 sticky z-50">
+  <nav class="flex justify-between items-center w-full px-margin-desktop py-base max-w-[1280px] mx-auto">
+    <a href="index.html" class="text-xl font-bold text-primary">SwiftDrop</a>
+    <div class="hidden md:flex items-center gap-md text-sm">
+      <a class="text-on-surface-variant hover:text-primary transition-colors" href="how-it-works.html">How It Works</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors" href="locations.html">Locations</a>
+      <a class="text-primary font-bold border-b-2 border-primary pb-1" href="support.html">Support</a>
+      <a href="menu.html" class="bg-primary text-white px-md py-xs rounded-lg hover:opacity-90 transition-all scale-95 active:scale-90">Order Now</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero-pattern py-xl px-margin-desktop">
+    <div class="max-w-[1280px] mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-md text-primary">How can we help?</h1>
+      <div class="max-w-2xl mx-auto relative group">
+        <span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline-variant">search</span>
+        <input class="w-full pl-[56px] pr-md py-md rounded-xl border border-outline-variant bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all shadow-sm" placeholder="Search for tracking, refunds, or account issues..." type="text"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="max-w-[1280px] mx-auto px-margin-desktop py-xl">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-lg items-start">
+      
+      <!-- FAQ Sidebar -->
+      <div class="lg:col-span-4 space-y-md">
+        <div class="bg-surface-container-low p-md rounded-xl space-y-base">
+          <h3 class="text-xl font-semibold mb-base text-on-surface">Categories</h3>
+          <button class="w-full text-left p-sm rounded-lg bg-primary-container/20 text-primary flex items-center gap-2 font-medium">
+            <span class="material-symbols-outlined">local_shipping</span> Delivery Tracking
+          </button>
+          <button class="w-full text-left p-sm rounded-lg hover:bg-white transition-colors flex items-center gap-2 font-medium text-on-surface-variant">
+            <span class="material-symbols-outlined">receipt_long</span> Order Issues
+          </button>
+        </div>
+      </div>
+
+      <!-- FAQ & Form Canvas -->
+      <div class="lg:col-span-8 space-y-xl">
+        <div class="space-y-md">
+          <h2 class="text-2xl font-bold text-on-surface flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary">live_help</span> Frequent Questions
+          </h2>
+          <div class="space-y-sm">
+            <details class="group bg-white border border-outline-variant rounded-xl overflow-hidden" open>
+              <summary class="flex justify-between items-center p-md cursor-pointer list-none text-lg font-semibold text-on-surface group-open:bg-surface-container-low transition-colors">
+                How do I track my drone delivery in real-time?
+                <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+              </summary>
+              <div class="p-md text-base text-on-surface-variant border-t border-outline-variant bg-surface">
+                Once your order is dispatched, navigate to the 'My Orders' section and select your active delivery. You'll see a live map with a Tech Teal path showing the drone's current altitude, speed, and estimated time to landing.
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="bg-white p-lg rounded-xl custom-shadow border border-outline-variant/30">
+          <div class="mb-lg">
+            <h2 class="text-2xl font-bold text-on-surface mb-xs">Submit a Request</h2>
+            <p class="text-base text-on-surface-variant">Can't find what you're looking for? Send us a detailed message.</p>
+          </div>
+          <form class="grid grid-cols-1 md:grid-cols-2 gap-md">
+            <div class="space-y-xs">
+              <label class="text-sm font-medium text-on-surface-variant">Full Name</label>
+              <input class="w-full p-sm border border-outline-variant rounded-lg focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" type="text"/>
+            </div>
+            <div class="space-y-xs">
+              <label class="text-sm font-medium text-on-surface-variant">Campus Email</label>
+              <input class="w-full p-sm border border-outline-variant rounded-lg focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" type="email"/>
+            </div>
+            <div class="md:col-span-2 space-y-xs">
+              <label class="text-sm font-medium text-on-surface-variant">Message</label>
+              <textarea class="w-full p-sm border border-outline-variant rounded-lg focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" rows="4"></textarea>
+            </div>
+            <div class="md:col-span-2 flex justify-end">
+              <button class="bg-primary text-white px-lg py-sm rounded-lg font-semibold hover:opacity-95 shadow-sm transition-all active:scale-95" type="button">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-surface-container-low border-t border-outline-variant">
+  <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-lg max-w-[1280px] mx-auto text-sm">
+    <div class="font-bold text-primary mb-md md:mb-0 text-xl">SwiftDrop</div>
+    <div class="flex gap-md mb-md md:mb-0 text-on-surface-variant">
+      <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+      <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+    </div>
+    <p class="text-on-surface-variant">© 2024 SwiftDrop. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
